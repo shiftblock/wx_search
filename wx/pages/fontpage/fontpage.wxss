@@ -1,0 +1,16 @@
+/* pages/fontpage/fontpage.wxss */
+@import "../../utils/listdlc/listdlc.wxss";
+page{
+  color: white
+}
+.all{
+  background: black;
+  width: 100%;
+  height: 100%;
+}
+swiper-item image{
+ width: 100%;
+}
+swiper{
+  height: 270px;
+}

@@ -1,0 +1,39 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/movie/movie",
+    "pages/hs/hs",
+    "pages/fontpage/fontpage",
+    "utils/listdlc/listdlc",
+    "pages/gamevideo/gamevideo",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "99℃",
+    "navigationBarTextStyle":"#fff",
+    "backgroundColor": "#000"
+  },
+  "tabBar": {
+    "backgroundColor": "#000",
+    "color": "#fff",
+    "list": [{
+      "pagePath": "pages/fontpage/fontpage",
+      "text": "Steam",
+      "iconPath": "pic/steamoff.png",
+      "selectedIconPath": "pic/steamon.png"
+    },
+    {
+      "pagePath": "pages/hs/hs",
+      "text": "炉石传说",
+      "iconPath": "pic/hsoff.png",
+      "selectedIconPath": "pic/hson.png"
+    },{
+      "pagePath": "pages/movie/movie",
+      "text": "Steam",
+      "iconPath": "pic/movieoff.png",
+      "selectedIconPath": "pic/movieon.png"
+    }]
+  }
+}

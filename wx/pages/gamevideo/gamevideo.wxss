@@ -1,0 +1,39 @@
+/* pages/gamevideo/gamevideo.wxss */
+@import '../../utils/listdlc/listdlc.wxss'
+video{
+  width: 100%;
+  border: 3px solid white;
+  box-sizing: border-box;
+}
+.all{
+  width: 100%;
+  background: black;
+  
+}
+.txt{
+  width: 70%;
+  color: #B8B2AC;
+  margin: 10px auto;
+}
+.comment{
+  width: 100%;
+  color: #ACB2B8;
+}
+.pz{
+  width: 70%;
+  color: #B8B2AC;
+   margin: 10px auto;
+}
+.common{
+  width: 100%;
+  text-align: center;
+  color: #66C0F4;
+  font-weight: bold;
+  font-size: 30px;
+  padding: 10px 0 ;
+}
+.clas{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}

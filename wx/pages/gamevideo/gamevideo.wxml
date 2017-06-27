@@ -1,0 +1,14 @@
+<!--pages/gamevideo/gamevideo.wxml-->
+<view class="all">
+<video src="{{url}}" ></video>
+<view class="txt-head common">游戏介绍</view>
+<view class="txt">{{txt}}</view>
+<view class="txt-head common">配置要求</view>
+<view class="pz">{{configuration}}</view>
+<view class="comment">
+  <import src="../../utils/listdlc/listdlc" />
+  <view class="clas" wx:for="{{gamecomment}}"  >
+  <template is="comment" data="{{...item}}"></template>
+  </view>
+</view>
+</view>

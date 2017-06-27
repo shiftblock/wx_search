@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<view class="container">
+<image class="bk" src="../../pic/earth.jpg"></image>
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class="usermotto">
+  <navigator url="../fontpage/fontpage" bindtap="ck">
+    <view animation="{{animationData}}" class="user-motto">{{motto}}</view>
+    </navigator>
+
+  </view>
+</view>

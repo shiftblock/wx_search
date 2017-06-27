@@ -1,0 +1,47 @@
+<!--pages/movie/movie.wxml-->
+<view class="common_title">快递查询</view>
+<form bindsubmit="formSubmit">
+<view class="section">
+  <view class="section__title">快递公司选择器：</view>
+  <picker  bindchange='bindPickerChange' name="kd_company" value="{{index}}" range="{{array}}">
+    <view class="picker">
+      当前选择：{{array[index]}}
+    </view>
+  </picker>
+</view>
+<input name="kd_number" class="kdsearch" type="number"/>
+<button form-type="submit">查询快递</button>
+</form>
+<view class="info" wx:key="999" wx:for="{{kd_info}}">
+<view class="info_time">{{item.time}}</view>
+<view class="info_con">{{item.context}}</view>
+</view>
+
+<view class="common_title">歌曲查询</view>
+<form bindsubmit="songsubmit">
+<input name="songname" class="kdsearch" />
+<button form-type="submit">查询歌曲</button>
+</form>
+
+<view class="song" wx:key="998" wx:for="{{song}}">
+  <view class="song_img"><image src="{{item.artistpic}}"></image></view>
+  <view class="song_txt">
+    <view class="song_name">歌曲名:{{item.albumname}}</view>
+    <view class="song_art">歌手:{{item.artistname}}</view>
+  </view>
+</view>
+
+<view class="common_title">动漫查询</view>
+<form bindsubmit="cartoonsubmit">
+<input name="cartoonname" class="kdsearch" />
+<button form-type="submit">查询动漫</button>
+</form>
+<view class="song" wx:key="997" wx:for="{{cartoon}}">
+  <view class="cartoon_img"><image src="{{item.coverImg}}"></image></view>
+  <view class="song_txt">
+    <view class="song_name">地区:{{item.area}}</view>
+    <view class="song_art">名字:{{item.name}}</view>
+    <view class="song_art">类型:{{item.type}}</view>
+    <view class="song_art">最后更新:{{item.lastUpdate}}</view>
+  </view>
+</view>

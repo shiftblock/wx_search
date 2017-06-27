@@ -1,0 +1,33 @@
+/* pages/hs/hs.wxss */
+page{
+  color: white;
+}
+.head{
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+  padding: 30px 0;
+}
+input{
+  border: 3px dashed white;
+  width: 100%;
+  height:50px;
+  margin-bottom: 30px;
+}
+.list{
+  border: 1px solid lightblue;
+  margin: 10px 0;
+}
+.imgy{
+  width: 100%;
+  height: 200px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imgy image{
+  height: 100%;
+  width: 150px;
+}

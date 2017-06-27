@@ -1,0 +1,13 @@
+<!--pages/hs/hs.wxml-->
+<view class="head">卡牌名称</view>
+<input type="text" bindinput="change" />
+<button bindtap="search">搜索</button>
+
+<view class="list" >
+  <view class="imgy"><image src="{{show[0].src}}"></image></view>
+  <view>卡牌名称:{{show[0].name}}</view>
+  <view>卡牌职业：{{show[0].pro}}</view>
+  <view>卡牌等级：{{show[0].level}}</view>
+  <view>卡牌来源：{{show[0].source}}</view>
+  <view>卡牌合成需要尘:{{show[0].require}}</view>
+</view>

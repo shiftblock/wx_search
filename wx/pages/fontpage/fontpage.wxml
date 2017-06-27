@@ -1,0 +1,16 @@
+<!--pages/fontpage/fontpage.wxml-->
+<view class="all">
+  <swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="white" indicator-active-color="blue">
+  <block wx:for="{{imgUrls}}" wx:key="1"> 
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="200"/>
+    </swiper-item>
+  </block>
+</swiper>
+<import src="../../utils/listdlc/listdlc.wxml" />  
+  <view wx:for="{{dlc}}" wx:key="2" >
+      <template is="list" data="{{...item}}" ></template>
+  </view>
+
+</view>

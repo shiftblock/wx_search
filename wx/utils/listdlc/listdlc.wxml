@@ -1,0 +1,21 @@
+<template name="list">
+  <view class="list-container" data-id="{{id}}" bindtap="getid" >
+    <view class="list-img"><image src="{{img}}"></image></view>
+       <view class="list-text">
+      <view class="game-name">名称:{{name}}</view>
+      <view class="game-name">售价:{{price}}</view>
+      <view class="game-name">类型:{{platform}}</view>
+         </view>
+  </view>
+</template>
+
+
+<template name="comment">
+  <view class="comment-container">
+    <view class="comment-img"><image src="{{img}}"></image></view>
+       <view class="list-text">
+      <view class="comment-txt"><text class="time">游戏时间：{{time}}小时</text></view>
+      <view class="comment-txt"><text>{{comment}}</text></view>
+    </view>
+  </view>
+</template>

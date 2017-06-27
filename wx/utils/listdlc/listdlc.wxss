@@ -1,0 +1,49 @@
+/* utils/listdlc.wxss */
+.list-container{
+  display: flex;
+  border: 1px solid black;
+}
+.list-img{
+  height: 100px;
+  padding: 10px 0;
+}
+.list-img image{
+  height: 100px;
+  width: 200px;
+}
+.list-text{
+  justify-content: center;
+  display: flex;
+  color: white;
+  flex: 1;
+  flex-direction: column;
+  padding-left: 20px;
+}
+.game-name{
+  width:160px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+}
+.comment-img image{
+  width: 50px;
+  height: 50px;
+}
+.comment-container{
+  width: 100%;
+  display: flex;
+  margin: 15px 0;
+  border: 1px solid #2C5168;
+  padding: 20px 0;
+}
+.time{
+  color: #4E5B69;
+  font-size: 12px;
+  font-family: '楷体'
+}
+.comment-txt{
+  color: #8F977E;
+  font-size: 14px;
+  font-family: '宋体'
+}
